@@ -72,9 +72,9 @@ def create_empty_lines():                  # just create empty lines for stylish
 
 def create_question(choose):               # just a system that changes between inputs
   if choose == 0:
-    return input("Do you wanna play some dice? (𝙚𝙣𝙩𝙚𝙧 with [𝙮𝙚𝙨] or [𝙮] / [𝙣𝙤] or [𝙣] to 𝙘𝙖𝙣𝙘𝙚𝙡) ")
+    return input("Do you wanna play some dice? (𝙚𝙣𝙩𝙚𝙧 with [𝙮𝙚𝙨] or [𝙮] / [𝙣𝙤] or [𝙣] to 𝙘𝙖𝙣𝙘𝙚𝙡) ").lower()
   elif choose == 1:
-    return input("Do you wanna play again? (𝙚𝙣𝙩𝙚𝙧 with [𝙮𝙚𝙨] or [𝙮] / [𝙣𝙤] or [𝙣] to 𝙘𝙖𝙣𝙘𝙚𝙡) ")
+    return input("Do you wanna play again? (𝙚𝙣𝙩𝙚𝙧 with [𝙮𝙚𝙨] or [𝙮] / [𝙣𝙤] or [𝙣] to 𝙘𝙖𝙣𝙘𝙚𝙡) ").lower()
 
 def create_stars():                        # a function that prints STARSSS *-*
   print("٭" * 28)
