@@ -15,18 +15,18 @@ def ignition():                            # this starts the program
 
   if answer == "yes" or answer == "y":     # if the user insert a "yes" argument
     roll_the_dice()
-    
+
   elif answer == "no" or answer == "n":    # if the user insert a "no" argument
     t.sleep(2)
     print("Bₐᵢ bₐᵢ :₍")
     return
-  
+
   else:                                    # if the user inserts a invalid argument
     t.sleep(2)
     print("Please enter a valid argument, silly kid!")
     ignition()
 
-    
+
 def roll_the_dice():                       # part 2 (gives us a random number from one to six)
   global sorted_number
 
@@ -38,7 +38,7 @@ def roll_the_dice():                       # part 2 (gives us a random number fr
   sorted_number = r.randrange(1, 7)        # the core of the program (random number)
   print_the_score()
 
-  
+
 def print_the_score():                     # part 3 (displays the number to the user)
   global answer
 
@@ -53,47 +53,47 @@ def print_the_score():                     # part 3 (displays the number to the 
   t.sleep(2)
   reconfirmation()
 
-  
+
 def reconfirmation():                      # part 4 (confirm again that the user wants to play)
   global answer
   answer = create_question(1)
-  
+
   if answer == "yes" or answer == "y":     # if the user insert a "yes" argument
     recapitulation()
-    
+
   elif answer == "no" or answer == "n":    # if the user insert a "no" argument
     print("Bₐᵢ bₐᵢ :₍")
     return
-  
+
   else:                                    # if the user inserts a invalid argument
     t.sleep(2)
     print("Please enter a valid argument, silly kid!")
     reconfirmation()
 
-    
+
 def recapitulation():                      # final (repeat the code if the answer is yes or y)
   create_empty_lines()
   print("───────✧❁✧───────" * 15)
   create_empty_lines()
   roll_the_dice()
 
-  
+
 def create_empty_lines():                  # just create empty lines for stylish purposes
   print("\n")
 
-  
+
 def create_question(choose):               # just a system that changes between inputs
   if choose == 0:
     return input("Do you wanna play some dice? (𝙚𝙣𝙩𝙚𝙧 with [𝙮𝙚𝙨] or [𝙮] / [𝙣𝙤] or [𝙣] to 𝙘𝙖𝙣𝙘𝙚𝙡) ").lower()
-  
+
   elif choose == 1:
     return input("Do you wanna play again? (𝙚𝙣𝙩𝙚𝙧 with [𝙮𝙚𝙨] or [𝙮] / [𝙣𝙤] or [𝙣] to 𝙘𝙖𝙣𝙘𝙚𝙡) ").lower()
 
-  
+
 def create_stars():                        # a function that prints STARSSS *-*
   print("٭" * 28)
 
-  
+
 def send_a_nice_message():                 # generate a cool message
   if sorted_number == 1:
     print("٭ Oh! Nice try! Do not give up :D")
@@ -108,5 +108,5 @@ def send_a_nice_message():                 # generate a cool message
   elif sorted_number == 6:
     print("٭ MUHAHAHAHAHAHA! YOU DID IT! YOU DID A SUCCESSFUL ATTACK! >:D")
 
-    
+
 ignition()
