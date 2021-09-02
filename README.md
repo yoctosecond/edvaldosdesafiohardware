@@ -3,4 +3,4 @@ Trabaio que o professor edvaldos passo pra gente no edtuech de quarta feira, ran
 
 salve gente uhuuuuuuuuuuuuuuu! glory to edvaldos
 
-<img src="lol.com.br">
+<img src="https://raw.githubusercontent.com/yoctosecond/edvaldosdesafiohardware/main/unknown.png">
