@@ -62,7 +62,7 @@ def reconfirmation():                      # part 4 (confirm again that the user
     print("Bₐᵢ bₐᵢ :₍")
     return
 
-  else:                                    # if the user inserts a invalid argument
+  else:                                    # if the user inserts an invalid argument
     print("Please enter a valid argument, silly kid!")
     reconfirmation()
 
